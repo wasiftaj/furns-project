@@ -3,6 +3,9 @@
     padding: 0;
 }
 
+body {
+    overflow-x: hidden;
+}
 
 :root {
     --maincolor: white;
@@ -455,4 +458,172 @@ footer .upperfooter {
 
 .lowerfooterimg {
     margin-right: 8%;
+}
+
+
+
+@media (max-width: 768px) {
+
+    /* Header */
+    header .upperhead {
+        flex-direction: column;
+        height: auto;
+        padding: 8px;
+        text-align: center;
+    }
+    header .upperhead .phead {
+        margin-left: 0;
+    }
+    header .outerbtns {
+        margin-right: 0;
+        width: auto;
+    }
+    .middlehead {
+        height: auto;
+        padding: 15px;
+    }
+    .middlehead img {
+        margin-left: 0;
+        width: 120px;
+    }
+    .innericons {
+        margin-right: 0;
+    }
+    .navhead {
+        height: auto;
+        padding: 10px;
+        overflow-x: auto;
+    }
+    .navhead ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 5px;
+    }
+    .navhead ul li {
+        margin-right: 0;
+        font-size: 12px;
+    }
+
+    /* Hero */
+    .main {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 20px;
+        text-align: center;
+    }
+    .maintxt h2 {
+        font-size: 40px;
+    }
+    .maintxt h4 {
+        font-size: 18px;
+    }
+    .maintxt p br {
+        display: none;
+    }
+    .maintxt button {
+        margin: 20px auto 0;
+    }
+    .mainimg img {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    /* Category circles */
+    .things {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 30px 10px;
+        gap: 15px;
+    }
+    .imgdivs {
+        margin-right: 0;
+        width: 130px;
+        height: 130px;
+    }
+    .imgdivs img {
+        width: 50px;
+        height: 50px;
+    }
+
+    /* Products */
+    .prodtxt {
+        width: 90%;
+        text-align: center;
+        padding: 20px;
+    }
+    .prodheadings {
+        width: 90%;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 20px;
+    }
+    .prodheadings h4 {
+        margin-right: 0;
+        font-size: 15px;
+    }
+    .prodmain {
+        width: 95%;
+    }
+    .prodr1, .prodr2 {
+        flex-direction: column !important;
+        align-items: center;
+        gap: 20px;
+    }
+    .prodr1 div, .prodr2 div {
+        width: 100%;
+        height: auto;
+    }
+    .prodr1 div img, .prodr2 div img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Latest */
+    .latest {
+        width: 90%;
+        margin-top: 40px;
+    }
+
+    /* Footer */
+    footer {
+        height: auto;
+        padding: 30px 20px;
+    }
+    footer .upperfooter {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .upperfooter .f1,
+    .upperfooter .f2,
+    .upperfooter .f3,
+    .upperfooter .f4 {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 0;
+    }
+    .f4 input {
+        width: 100%;
+    }
+    .f4 button {
+        width: 100%;
+    }
+    .lowerfooter {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        text-align: center;
+        gap: 10px;
+    }
+    .lowerfootertxt {
+        width: 100%;
+    }
+    .lowerfooter .lowerfootertxt p {
+        margin-left: 0;
+    }
+    .lowerfooterimg {
+        margin-right: 0;
+    }
 }
